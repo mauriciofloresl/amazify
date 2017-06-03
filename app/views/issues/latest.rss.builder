@@ -1,9 +1,9 @@
 #encoding: UTF-8
 xml.instruct! :xml, version: '1.0'
-xml.rss :version => '2.0', 'xmlns:media' => 'http://search.yahoo.com/mrss/', 'xmlns:daNews' => 'http://inbox.disruptiveangels.com/issues/feed' do
+xml.rss :version => '2.0', 'xmlns:media' => 'http://search.yahoo.com/mrss/', 'xmlns:daNews' => 'http://amazify.co/issues/feed' do
   xml.channel do
-    xml.title 'Disruptive Newsletter'
-    xml.description @issue.id
+    xml.title 'Amazify Newsletter'
+    xml.description 'Te compartimos los artículos de la semana '@issue.id 
     xml.language 'en'
 
     @issue.articles.each do |article|
